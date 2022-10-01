@@ -3,22 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <title>Actividad "Lenguaje HTML"</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@1,700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Comforter+Brush&family=Comic+Neue:ital,wght@1,700&display=swap');
+
+        p{
+            color:rgb(248, 245, 245);
+            font-size: 18.5px;
+            font-family: 'Trebuchet MS';
+            background-color: rgb(118, 141, 206);
+            
+        }
+        h2{
+            color: rgba(144, 173, 65, 0.856);
+            font-size:28px;
+
+        }
+        a{
+            color:rgb(49, 72, 204);
+            font-family:'Franklin Gothic Medium';
+            margin: red;
+            text-decoration: none;
+
+
+        }
+        aside{
+            background-color:rgb(219, 210, 84);
+            display:inline-block;
+            width: 500px;
+        }
+        nav{
+            background-color:rgb(226, 226, 223);
+            height: 10%;
+
+        }
+        #prueba{
+            color:rgb(17, 17, 17);
+            font-family: 'Comic Brush', cursive;
+            font-weight: 700;
+        }
+        .p2{
+            color:coral;
+            
+        }
+        .enlace1{
+            font-family: 'Cinzel Decorative', cursive;
+        }
+        #enlace2{
+            font-family: 'Verdana';
+        }
+        h1{
+            border-style:solid;
+            border-width:8px;
+            border-color: black;
+            padding: 15%;
+            margin: 5%;
+        }
+        section{
+            border-style:solid;
+            border-width:2px;
+            border-color: black;
+            width: 500px;
+        }
+    </style>
     
 </head>
 <body>
     <header> 
         <h1>Encabezado nivel 1</h1>
         <nav>
-            <a href="https://www.monsterhunter.com/rise/es/" target="blank">
+            <a href="https://www.monsterhunter.com/rise/es/" target="blank" class="enlace1">
                 Enlace 1
             </a>
-            <a href="https://game.capcom.com/residentevil/en/" target="blank">
+            <a href="https://game.capcom.com/residentevil/en/" target="blank" class="enlace1">
               Enlace 2  
             </a>
-            <a href="https://www.webtoons.com/es/fantasy/tower-of-god/list?title_no=1718&page=1" target="blank">
+            <a href="https://www.webtoons.com/es/fantasy/tower-of-god/list?title_no=1718&page=1" target="blank" class="enlace1">
                 Enlace 3
             </a>
-            <a href="https://github.com/" target="blank">
+            <a href="https://github.com/" target="blank" id="enlace2">
                 Enlace 4
             </a>
         </nav>
@@ -26,7 +89,7 @@
     <main>
         <section>
             <h2>Encabezado nivel 2 </h2>
-            <p>
+            <p id="prueba">
                 Aquí va texto del primer <strong> párrafo.</strong>
             </p>
             <p>
@@ -35,12 +98,12 @@
         </section>
         <section>
             <h2>Encabezado nivel 2 otra sección</h2>
-            <p> Parrafo de muestra</p>
+            <p class="p2"> Parrafo de muestra</p>
         </section>
     </main>
     <aside>
         <h2>Apartado</h2>
-        <p> Elije una opción</p>
+        <p class="p2"> Elije una opción</p>
         <form>
             <ul>
                 <li> 
