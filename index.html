@@ -4,84 +4,116 @@
     <meta charset="UTF-8">
     <title>Actividad "Lenguaje HTML"</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@1,700&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Comforter+Brush&family=Comic+Neue:ital,wght@1,700&display=swap');
-
-        p{
-            color:rgb(248, 245, 245);
-            font-size: 18.5px;
-            font-family: 'Trebuchet MS';
-            background-color: rgb(118, 141, 206);
-            
+        *{
+            margin: 0;
         }
-        h2{
-            color: rgba(144, 173, 65, 0.856);
-            font-size:28px;
-
+        body{
+            background-color: #75c9b7;
         }
-        a{
-            color:rgb(49, 72, 204);
-            font-family:'Franklin Gothic Medium';
-            margin: red;
-            text-decoration: none;
-
-
-        }
-        aside{
-            background-color:rgb(219, 210, 84);
-            display:inline-block;
-            width: 500px;
-        }
-        nav{
-            background-color:rgb(226, 226, 223);
-            height: 10%;
-
-        }
-        #prueba{
-            color:rgb(17, 17, 17);
-            font-family: 'Comic Brush', cursive;
-            font-weight: 700;
-        }
-        .p2{
-            color:coral;
-            
-        }
-        .enlace1{
-            font-family: 'Cinzel Decorative', cursive;
-        }
-        #enlace2{
-            font-family: 'Verdana';
+        header{
+            background-color: black;
+            margin: 0px 15px;
+            display: flex;
+            flex-direction: column;
+            align-content: center;
         }
         h1{
-            border-style:solid;
-            border-width:8px;
-            border-color: black;
-            padding: 15%;
-            margin: 5%;
+            color: #c7ddcc;
+            height: 90px;
+            text-align: center;
+            font-size: 50px;
+            padding-top: 20px;
+        }
+        .contenedor-enlace{
+            background-color: #c7ddcc;
+            display: flex;
+            justify-content: space-evenly;
+            margin: 10px 10px;
+            height: 50px;
+        }
+        nav a{
+            text-decoration: none;
+            font-size: 30px;
+            color: black;
+            padding-top: 5px;
+        }
+        main{
+            background-color: #c7ddcc;
+            margin: 20px 15px;
+            height: 280px;
+            display: flex;
         }
         section{
-            border-style:solid;
-            border-width:2px;
-            border-color: black;
-            width: 500px;
+            background-color: #12a4d9;
+            flex-grow: 4;
+            margin: 10px 7px 10px 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+        section h2{
+            flex-grow: 2.5;
+            padding-top: 25px;
+            font-size: 40px;
+        }
+        section p{
+            flex-grow: 2;
+            font-size: 20px;
+        }
+        aside{
+            background-color: #d9138a;
+            flex-grow: 1;
+            margin: 10px 10px 10px 7px;
+            text-align: center;
+        }
+        aside h2{
+            text-align: center;
+            padding: 25px;
+            font-size: 40px;
+        }
+        aside p{
+            font-size: 20px;
+            padding-bottom: 12px;
+        }
+        aside form{
+            font-size: 18px;
+        }
+        li{
+            list-style-type:none ;
+            padding: 3px 0px;
+        }
+        .button{
+            padding-top: 5px;
+        }
+        footer{
+            background-color: #e2d810;
+            margin: 20px 15px;
+            height: 100px;
+        }
+        footer p{
+            text-align: center;
+            padding: 28px 5px;
+            font-size: 25px;
+
         }
     </style>
     
 </head>
 <body>
-    <header> 
+    <header>
         <h1>Encabezado nivel 1</h1>
-        <nav>
-            <a href="https://www.monsterhunter.com/rise/es/" target="blank" class="enlace1">
+        <nav class="contenedor-enlace">
+            <a href="https://www.monsterhunter.com/rise/es/">
                 Enlace 1
             </a>
-            <a href="https://game.capcom.com/residentevil/en/" target="blank" class="enlace1">
+            <a href="https://game.capcom.com/residentevil/en/">
               Enlace 2  
             </a>
-            <a href="https://www.webtoons.com/es/fantasy/tower-of-god/list?title_no=1718&page=1" target="blank" class="enlace1">
+            <a href="https://www.webtoons.com/es/fantasy/tower-of-god/list?title_no=1718&page=1">
                 Enlace 3
             </a>
-            <a href="https://github.com/" target="blank" id="enlace2">
+            <a href="https://github.com/">
                 Enlace 4
             </a>
         </nav>
@@ -89,40 +121,37 @@
     <main>
         <section>
             <h2>Encabezado nivel 2 </h2>
-            <p id="prueba">
+            <p>
                 Aquí va texto del primer <strong> párrafo.</strong>
             </p>
             <p>
                 Aquí va texto del segundo párrafo
             </p>
         </section>
-        <section>
-            <h2>Encabezado nivel 2 otra sección</h2>
-            <p class="p2"> Parrafo de muestra</p>
-        </section>
+        <aside>
+            <h2>Apartado</h2>
+            <p> Elije una opción</p>
+            <form>
+                <ul>
+                    <li> 
+                        <input type="checkbox">
+                        <label for="Opción 1">Opción 1</label>
+                    </li>
+                    <li>
+                        <input type="checkbox">
+                        <label for="Opción 2">Opción 2</label>
+                    </li>
+                    <li> 
+                        <input type="checkbox">
+                        <label for="Opción 3">Opción 3</label>
+                    </li>
+                </ul>
+                <div class="button">
+                    <button>Enviar</button>
+                </div>
+            </form>
+        </aside>
     </main>
-    <aside>
-        <h2>Apartado</h2>
-        <p class="p2"> Elije una opción</p>
-        <form>
-            <ul>
-                <li> 
-                    <input type="checkbox">
-                    <label for="Opción 1">Opción 1</label>
-                </li>
-                <li>
-                    <input type="checkbox">
-                    <label for="Opción 2">Opción 2</label>
-                </li>
-                <li> 
-                    <input type="checkbox">
-                    <label for="Opción 3">Opción 3</label>
-                </li>
-            </ul>
-            <button>Enviar</button>
-        </form>
-
-    </aside>
     <footer>
         <p>
             Sección de información de contacto, derechos de autor, etc.
